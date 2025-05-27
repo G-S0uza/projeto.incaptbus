@@ -172,7 +172,7 @@
         // Função para verificar o login
         function verificarLogin(event) {
             event.preventDefault(); // Impede o envio do formulário para fazer a verificação via JavaScript
-        }
+        
         // Pega os valores dos campos de login
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
@@ -190,6 +190,7 @@
         } else {
             mensagem.className = 'error';
             mensagem.innerHTML = "<br>Nome de usuário ou senha incorretos!";
+        }
         }
 
 
@@ -223,12 +224,12 @@
         // Função para mostrar o formulário de login
         function mostrarFormularioLogin() {
             document.getElementById('registerContainer').style.display = 'none';
-            document.querySelector('.login-container').style.display = 'flex';
+            document.querySelectorid('.login-container').style.display = 'flex';
         }
 
         // Função para mostrar o formulário de cadastro
         function mostrarFormularioCadastro() {
-            document.querySelector('.login-container').style.display = 'none';
+            document.querySelectorid('.login-container').style.display = 'none';
             document.getElementById('registerContainer').style.display = 'flex';
         }
     </script>
